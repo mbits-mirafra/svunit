@@ -74,5 +74,7 @@ clean:
 
 all: 
 	make clean
+	## Run once to generate .testrunner and other files
+	runSVUnit -s questa
 	make compile
 	make simulate
